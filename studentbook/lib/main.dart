@@ -1,3 +1,5 @@
+import 'dart:isolate';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,9 +27,9 @@ class ListTransfer extends StatelessWidget {
    Widget build(BuildContext context) {
     return Column(
           children: <Widget> [
-            ItemTransferencia('100.00', '1000'),
-            ItemTransferencia('200.00', '2000'),
-            ItemTransferencia('300.00', '3000'),
+            ItemTransferencia(Transfer(100.00, 1000)),
+            ItemTransferencia(Transfer(200.00, 2000)),
+            ItemTransferencia(Transfer(300.00, 3000)),
           ],
         );
   }
@@ -36,10 +38,9 @@ class ListTransfer extends StatelessWidget {
 
 class ItemTransferencia extends StatelessWidget {
 
-  final String value;
-  final String numberAccount;
+  final Transfer _transfer;
 
-  ItemTransferencia(this.value, this.numberAccount);  
+  ItemTransferencia(this._transfer);  
 
   
 
@@ -48,10 +49,17 @@ class ItemTransferencia extends StatelessWidget {
     return  Card(
             child: ListTile(
               leading: Icon(Icons.monetization_on),
-              title: Text(value),
-              subtitle: Text(numberAccount),
+              title: Text(_transfer.valor.toString()),
+              subtitle: Text(_transfer.numberAccount.toString()),
             )
           );
-  }
-  
+    }
+}
+
+class Transfer {
+  final double valor;
+  final int numberAccount;
+
+  Transfer(this.valor, this.numberAccount);   
+
 }
