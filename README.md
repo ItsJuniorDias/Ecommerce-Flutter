@@ -21,7 +21,7 @@ If you want to test the App in the Production mode, the installers are listed be
 
 ### Prerequisites
 
-To run this project in the development mode, you'll need to have a basic environment to run a React and React Native App, also,  that can be found [here](https://flutter.dev/docs/get-started/install).
+To run this project in the development mode, you'll need to have a basic environment to run Flutter App, also,  that can be found [here](https://flutter.dev/docs/get-started/install).
 
 ### Installing
 
