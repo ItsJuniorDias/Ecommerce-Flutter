@@ -1,39 +1,29 @@
 import 'package:flutter/material.dart';
+import '../widgets/ItemCategories.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class Catalogo extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        backgroundColor: Color(0xFFE5E5E5)
-      ),
-      home: Scaffold(
+    return Scaffold(
         body: SafeArea(
           child: Column(
             children: [
               Container(                     
-                height: 234,
+                height: 190,
+                width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.white,   
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black12,
+                      color: Color.fromRGBO( 0, 0, 0, 0.12),
                       offset: Offset(0, 4),
                       blurRadius: 12,
-                      spreadRadius: 0.2
                       )
                     ]
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.max,
                   children: [
                     Container(
                       margin: EdgeInsets.fromLTRB(8, 8, 0, 30),
@@ -50,27 +40,21 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                      width: double.infinity,
-                      child: Container(
-                        width: 100,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          color: Color(0xFF222222),
-                          borderRadius: BorderRadius.all(Radius.circular(29))
-                        ),
-                        child: Center(
-                          child: Text("T-shirts", 
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500
-                            )
-                          ),
-                        )
-                      )
+                      margin: EdgeInsets.fromLTRB(16, 10, 10, 10),
+                      height: 32,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children:[ 
+                          ItemCategories("T-Shirts"),
+                          ItemCategories("Crops tops"),
+                          ItemCategories("Sleeveless"),
+                          ItemCategories("Blusa"),
+                          ItemCategories("Shorts"),
+                          ItemCategories("Cropt"),
+                        ],
+                      ),
                     )
-                  ]
+                  ],
                 )
               ),
               Container(
@@ -79,7 +63,6 @@ class MyApp extends StatelessWidget {
             ]
           ),
         ),
-      )
-    );
+      );
   }
 }
