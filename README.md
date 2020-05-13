@@ -3,7 +3,8 @@
 </div>
 
 <div align="center">
-  #### A meeting between programmers so they can share and share knowledge and experience
+  
+  #### Your Digital Book
   
   ![](https://img.shields.io/badge/author-Junior%20Dias-/?color=df4723)
   ![](https://img.shields.io/badge/Back--End-NodeJS-/?color=df4723)
