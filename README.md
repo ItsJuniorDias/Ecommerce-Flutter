@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./studentbook/lib/assets/logo.png" height="100px" alt="Be the hero"/>
+  <img src="./studentbook/lib/assets/logo.png" height="100px" alt="StudentBook"/>
 </div>
 
 # CyberBook :iphone:
