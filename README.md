@@ -6,10 +6,10 @@
   
   #### Your Digital Book
   
-  ![](https://img.shields.io/badge/author-Junior%20Dias-/?color=df4723)
-  ![](https://img.shields.io/badge/Back--End-NodeJS-/?color=df4723)
-  ![](https://img.shields.io/badge/Front--End-ReactJS-/?color=df4723)
-  ![](https://img.shields.io/badge/Mobile-React%20Native-/?color=df4723)
+  ![](https://img.shields.io/badge/author-Junior%20Dias-/?color=ff5f54)
+  ![](https://img.shields.io/badge/Back--End-NodeJS-/?color=ff5f54)
+  ![](https://img.shields.io/badge/Front--End-ReactJS-/?color=ff5f54)
+  ![](https://img.shields.io/badge/Mobile-React%20Native-/?color=ff5f54)
 </div> 
 
 
