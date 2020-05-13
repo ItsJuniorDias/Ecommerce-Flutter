@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./studentbook/lib/assets/logo2.png" height="350px" alt="StudentBook"/>
+  <img src="./studentbook/lib/assets/logo2.png" height="200px" alt="StudentBook"/>
 </div>
 
 <div align="center">
