@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./studentbook/lib/assets/logo.png" height="100px" alt="Be the hero"/>
+</div>
+
 # CyberBook :iphone:
 Project created in flutter of a virtual notebook
 
