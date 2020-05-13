@@ -51,5 +51,10 @@ $ cd StudentBook
 ```
 $ flutter run
 ```
+**or**
+
+```
+Ctrl+F5 in Visual Code
+```
 
 
