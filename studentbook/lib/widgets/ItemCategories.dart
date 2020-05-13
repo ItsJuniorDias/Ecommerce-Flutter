@@ -15,8 +15,8 @@ class ItemCategories extends StatelessWidget {
       decoration: BoxDecoration(
           color: Color(0xFF222222),
           borderRadius: BorderRadius.all(Radius.circular(29))),
-      child: Center(
-        child: Text(name,
+          child: Center(
+            child: Text(name,
             style: TextStyle(
               color: Colors.white,
               fontSize: 14,
