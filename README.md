@@ -1,6 +1,17 @@
 <div align="center">
-  <img src="./studentbook/lib/assets/logo.png" height="100px" alt="StudentBook"/>
+  <img src="./studentbook/lib/assets/logo.png" height="350px" alt="StudentBook"/>
 </div>
+
+<div align="center">
+  
+  #### Your Digital Book
+  
+  ![](https://img.shields.io/badge/author-Junior%20Dias-/?color=ff5f54)
+  ![](https://img.shields.io/badge/Back--End-NodeJS-/?color=ff5f54)
+  ![](https://img.shields.io/badge/Front--End-ReactJS-/?color=ff5f54)
+  ![](https://img.shields.io/badge/Mobile-React%20Native-/?color=ff5f54)
+</div> 
+
 
 # CyberBook :iphone:
 Project created in flutter of a virtual notebook
