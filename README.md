@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./studentbook/lib/assets/logo.png" height="350px" alt="StudentBook"/>
+  <img src="./studentbook/lib/assets/logo2.png" height="200px" alt="StudentBook"/>
 </div>
 
 <div align="center">
@@ -7,9 +7,7 @@
   #### Your Digital Book
   
   ![](https://img.shields.io/badge/author-Junior%20Dias-/?color=ff5f54)
-  ![](https://img.shields.io/badge/Back--End-NodeJS-/?color=ff5f54)
-  ![](https://img.shields.io/badge/Front--End-ReactJS-/?color=ff5f54)
-  ![](https://img.shields.io/badge/Mobile-React%20Native-/?color=ff5f54)
+  ![](https://img.shields.io/badge/Mobile-Flutter%20-/?color=ff5f54)
 </div> 
 
 
@@ -52,6 +50,10 @@ $ cd StudentBook
 
 ```
 $ flutter run
+```
+ or
+```
+Ctrl+F5 in Visual Code
 ```
 
 
