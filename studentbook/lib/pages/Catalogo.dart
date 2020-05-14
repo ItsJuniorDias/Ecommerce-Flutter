@@ -55,11 +55,11 @@ class Catalogo extends StatelessWidget {
             child: Flexible(
                 child: ListView(
               children: <Widget>[
-                 CardProduct(),
-                 CardProduct(),
-                 CardProduct(),
-                 CardProduct(),
-                 CardProduct(),
+                 CardProduct("Pullover", "Mango","RS 49,00"),
+                 CardProduct("Croped", "Blusa","RS 32,00"),
+                 CardProduct("Short", "Vestimenta", "RS 15,00"),
+                 CardProduct("Blusa", "Inverno","RS 75,00"),
+                 CardProduct("Bermuda", "Marculino","RS 25,00"),
               ],
             )),
           )

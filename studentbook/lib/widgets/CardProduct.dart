@@ -4,7 +4,9 @@ class CardProduct extends StatelessWidget{
   final String name;
   final String subname;
   final String value;
-  final String stars;
+
+
+  CardProduct(this.name, this.subname, this.value);
 
   @override build(BuildContext context) {
     return Container(
@@ -58,14 +60,14 @@ class CardProduct extends StatelessWidget{
                                  Container(
                                   padding: const EdgeInsets.only(bottom: 5),
                                   child: Text(
-                                    'Pullover',
+                                    name,
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                 ),
                                 Text(
-                                  'Mango',
+                                  subname,
                                   style: TextStyle(
                                     color: Colors.grey[500],
                                   ),
@@ -98,7 +100,7 @@ class CardProduct extends StatelessWidget{
                                   ),
                                 ),
                                 Text(
-                                    'RS 51,00',
+                                    value,
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
