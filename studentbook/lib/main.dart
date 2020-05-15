@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'E-commerce',
       theme: ThemeData(
-        fontFamily: 'Roboto',
+        fontFamily: 'Metropolis',
         primarySwatch: Colors.blue,
         backgroundColor: Color(0xFFE5E5E5)
       ),

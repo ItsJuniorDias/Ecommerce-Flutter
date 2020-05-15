@@ -64,10 +64,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Roboto
+     - family: Metropolis
        fonts:
-        - asset: lib/fonts/Roboto-Bold.ttf
-          weight: 700
+        - asset: lib/fonts/Metropolis-Bold.otf
+         
  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

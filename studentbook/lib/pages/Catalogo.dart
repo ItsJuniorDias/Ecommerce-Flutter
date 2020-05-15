@@ -38,7 +38,7 @@ class Catalogo extends StatelessWidget {
                     child: Text("Women's tops",
                         style: TextStyle(
                             fontSize: 34,
-                            fontFamily: "Roboto",
+                            fontFamily: "Metropolis",
                             fontWeight: FontWeight.bold,
                             color: Color(0xFF222222))),
                   ),
