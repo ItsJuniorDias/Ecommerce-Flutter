@@ -4,9 +4,9 @@ class CardProduct extends StatelessWidget {
   final String name;
   final String subname;
   final String value;
-  
+  final img;
 
-  CardProduct(this.name, this.subname, this.value);
+  CardProduct(this.name, this.subname, this.value, this.img);
 
   @override
   build(BuildContext context) {
@@ -24,12 +24,12 @@ class CardProduct extends StatelessWidget {
                 blurRadius: 12,
               )
             ]),
-            child: Row(
-              children: <Widget>[
-                Image.asset(
-                   'lib/assets/photo.png',
-                 width: 105,
-                 height: 125,
+        child: Row(
+          children: <Widget>[
+            Image.asset(
+               "lib/assets/$img",
+              width: 105,
+              height: 123,
               fit: BoxFit.cover,
             ),
             Column(
