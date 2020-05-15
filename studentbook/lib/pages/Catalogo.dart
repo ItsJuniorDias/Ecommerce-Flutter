@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:studentbook/widgets/Filters.dart';
 import '../widgets/CardProduct.dart';
 import '../widgets/ItemCategories.dart';
 
@@ -9,25 +10,30 @@ class Catalogo extends StatelessWidget {
       body: SafeArea(
         child: Column(children: [
           Container(
-              height: 190,
+              height: 195,
               width: double.infinity,
-              decoration: BoxDecoration(color: Colors.white, 
-                boxShadow: [
+              decoration: BoxDecoration(color: Colors.white, boxShadow: [
                 BoxShadow(
                   color: Color.fromRGBO(0, 0, 0, 0.12),
                   offset: Offset(0, 4),
                   blurRadius: 12,
                 )
-               ]
-              ),
+              ]),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                      margin: EdgeInsets.fromLTRB(8, 8, 0, 30),
-                      child: Icon(Icons.arrow_back_ios)),
+                      margin: EdgeInsets.fromLTRB(8, 8, 0, 25),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                        Icon(Icons.arrow_back_ios, size:22),
+                        Icon(Icons.search,),
+                      ],),
+                      
+                      ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(14, 0, 0, 25),
+                    margin: EdgeInsets.fromLTRB(14, 0, 0, 0),
                     child: Text("Women's tops",
                         style: TextStyle(
                             fontSize: 34,
@@ -36,7 +42,7 @@ class Catalogo extends StatelessWidget {
                   ),
                   Container(
                     margin: EdgeInsets.fromLTRB(16, 11, 10, 10),
-                    height: 32,
+                    height: 35,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
@@ -48,18 +54,32 @@ class Catalogo extends StatelessWidget {
                         ItemCategories("Cropt"),
                       ],
                     ),
-                  )
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(14, 8, 14, 0),
+                    width: 450,
+                    height: 26,
+                    padding: EdgeInsets.fromLTRB(5, 1,5, 0),
+                    color: Colors.grey[200],
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                      Filters(Icons.filter_list, "Filters"),
+                      Filters(Icons.swap_vert, "Price: lowest to hight"),
+                      Filters(Icons.dashboard,""),
+                    ],)
+                  ),
                 ],
               )),
           Container(
             child: Flexible(
                 child: ListView(
               children: <Widget>[
-                 CardProduct("Pullover", "Mango","RS 49,00"),
-                 CardProduct("Croped", "Blusa","RS 32,00"),
-                 CardProduct("Short", "Vestimenta", "RS 15,00"),
-                 CardProduct("Blusa", "Inverno","RS 75,00"),
-                 CardProduct("Bermuda", "Marculino","RS 25,00"),
+                CardProduct("Pullover", "Mango", "RS 49,00",),
+                CardProduct("Croped", "Blusa", "RS 32,00"),
+                CardProduct("Short", "Vestimenta", "RS 15,00"),
+                CardProduct("Blusa", "Inverno", "RS 75,00"),
+                CardProduct("Bermuda", "Marculino", "RS 25,00"),
               ],
             )),
           )
