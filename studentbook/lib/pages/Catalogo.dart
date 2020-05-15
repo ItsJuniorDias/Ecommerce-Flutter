@@ -3,6 +3,7 @@ import 'package:studentbook/widgets/Filters.dart';
 import '../widgets/CardProduct.dart';
 import '../widgets/ItemCategories.dart';
 
+
 class Catalogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -37,6 +38,7 @@ class Catalogo extends StatelessWidget {
                     child: Text("Women's tops",
                         style: TextStyle(
                             fontSize: 34,
+                            fontFamily: "Roboto",
                             fontWeight: FontWeight.bold,
                             color: Color(0xFF222222))),
                   ),

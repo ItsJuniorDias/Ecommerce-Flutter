@@ -29,7 +29,7 @@ class CardProduct extends StatelessWidget {
             Image.asset(
                "lib/assets/$img",
               width: 105,
-              height: 123,
+              height: 124,
               fit: BoxFit.cover,
             ),
             Column(
