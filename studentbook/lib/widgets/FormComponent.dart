@@ -21,7 +21,24 @@ class FormComponent extends StatelessWidget {
             }
             return null;
           },
+          
         ),
+         Container(
+           margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
+           child: TextFormField(
+          decoration: const InputDecoration(
+            hintText: 'Password',
+          ),
+          validator: (value) {
+            if (value.isEmpty) {
+              return 'Please enter some text';
+            }
+            return null;
+          },
+           ) ,
+         ),
+
+         
       ],),
     );
   }
