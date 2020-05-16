@@ -1,6 +1,6 @@
-import 'package:studentbook/pages/Catalogo.dart';
 import 'package:flutter/material.dart';
-
+import 'package:studentbook/pages/Catalogo.dart';
+import 'package:studentbook/pages/SignIn.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         backgroundColor: Color(0xFFE5E5E5)
       ),
-      home: Catalogo(),
+      home: SignIn(),
     );
   }
 } 
