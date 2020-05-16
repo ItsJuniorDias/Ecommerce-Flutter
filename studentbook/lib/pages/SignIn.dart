@@ -26,10 +26,10 @@ class SignIn extends StatelessWidget {
                             color: Color(0xFF222222))),
                   ),
                   Container(
-                    
+                  
                     width: 600,
                     height: 200,
-                    margin:  EdgeInsets.fromLTRB(14, 70, 14, 0),  
+                    margin:  EdgeInsets.fromLTRB(14, 40, 14, 0),  
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
