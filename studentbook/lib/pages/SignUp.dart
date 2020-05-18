@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:studentbook/pages/Catalogo.dart';
-import 'package:studentbook/pages/SignUp.dart';
+import 'package:studentbook/pages/SignIn.dart';
 import 'package:studentbook/widgets/EmailWidget.dart';
-import 'package:studentbook/widgets/FormComponent.dart';
 
-class SignIn extends StatelessWidget {
+
+class SignUp extends StatelessWidget {
+
+   final _formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +26,7 @@ class SignIn extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(14, 5, 0, 0),
-                child: Text("Login",
+                child: Text("Sign Up",
                     style: TextStyle(
                         fontSize: 34,
                         fontFamily: "Metropolis",
@@ -37,39 +40,64 @@ class SignIn extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                    FormComponent(),
-                    Container(
-                      margin: EdgeInsets.fromLTRB(14, 16, 14, 0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (_) {
-                                return SignUp();
-                              }));
+                       Form(
+                        key: _formKey,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                          TextFormField(
+                            decoration: const InputDecoration(
+                              hintText: 'Name',
+                            ),
+                            validator: (value) {
+                              if (value.isEmpty) {
+                                return 'Please enter some text';
+                              }
+                              return null;
                             },
-                            child: Text("Forget your password?",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontFamily: "Metropolis-Normal",
-                                    fontWeight: FontWeight.w400)),
-
+                            
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                            child: Icon(Icons.subdirectory_arrow_right,
-                                size: 24, color: Colors.red[500]),
+                            margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                            child: TextFormField(
+                            decoration: const InputDecoration(
+                              hintText: 'Email',
+                            ),
+                            validator: (value) {
+                              if (value.isEmpty) {
+                                return 'Please enter some text';
+                              }
+                              return null;
+                            },
+                            ) ,
                           ),
-                        ],
-                      ),
+
+                          Container(
+                            margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                            child: TextFormField(
+                            decoration: const InputDecoration(
+                              hintText: 'Password',
+                            ),
+                            validator: (value) {
+                              if (value.isEmpty) {
+                                return 'Please enter some text';
+                              }
+                              return null;
+                            },
+                            ) ,
+                          ),
+                          
+                          
+                            
+                           
+                      ],),
                     ),
+                      
                   ],
                 ),
               ),
               Container(
-                  margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
+                  margin: EdgeInsets.fromLTRB(0, 92, 0, 0),
                   decoration: BoxDecoration(boxShadow: [
                     BoxShadow(
                       color: Color.fromRGBO(0, 0, 0, 0.13),
@@ -81,6 +109,7 @@ class SignIn extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ButtonTheme(
+                    
                         height: 50.0,
                         minWidth: 445,
                         child: RaisedButton(
@@ -90,7 +119,7 @@ class SignIn extends StatelessWidget {
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0)),
                           child: Text(
-                            "LOGIN",
+                            "SIGN UP",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18,
@@ -103,7 +132,7 @@ class SignIn extends StatelessWidget {
                     ],
                   )),
               Container(
-                margin: EdgeInsets.fromLTRB(0, 194, 0, 0),
+                margin: EdgeInsets.fromLTRB(0, 122, 0, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
