@@ -13,7 +13,8 @@ class Catalogo extends StatelessWidget {
           Container(
               height: 195,
               width: double.infinity,
-              decoration: BoxDecoration(color: Colors.white, boxShadow: [
+              decoration: BoxDecoration(color: Colors.white,
+               boxShadow: [
                 BoxShadow(
                   color: Color.fromRGBO(0, 0, 0, 0.12),
                   offset: Offset(0, 4),

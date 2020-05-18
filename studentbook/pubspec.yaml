@@ -45,6 +45,8 @@ flutter:
    - lib/assets/img1.png
    - lib/assets/img2.png            
    - lib/assets/photo.png
+   - lib/assets/gmail.png
+   - lib/assets/facebook.png
  
 
   # To add assets to your application, add an assets section, like this:
