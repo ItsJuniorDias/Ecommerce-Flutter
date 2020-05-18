@@ -3,10 +3,8 @@ import 'package:studentbook/pages/Catalogo.dart';
 import 'package:studentbook/pages/SignIn.dart';
 import 'package:studentbook/widgets/EmailWidget.dart';
 
-
 class SignUp extends StatelessWidget {
-
-   final _formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -36,15 +34,15 @@ class SignUp extends StatelessWidget {
               Container(
                 width: 600,
                 height: 200,
-                margin: EdgeInsets.fromLTRB(14, 73, 14, 0),
+                margin: EdgeInsets.fromLTRB(14, 65, 14, 0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                       Form(
-                        key: _formKey,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
+                    Form(
+                      key: _formKey,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
                           TextFormField(
                             decoration: const InputDecoration(
                               hintText: 'Name',
@@ -55,49 +53,68 @@ class SignUp extends StatelessWidget {
                               }
                               return null;
                             },
-                            
                           ),
                           Container(
                             margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
                             child: TextFormField(
-                            decoration: const InputDecoration(
-                              hintText: 'Email',
+                              decoration: const InputDecoration(
+                                hintText: 'Email',
+                              ),
+                              validator: (value) {
+                                if (value.isEmpty) {
+                                  return 'Please enter some text';
+                                }
+                                return null;
+                              },
                             ),
-                            validator: (value) {
-                              if (value.isEmpty) {
-                                return 'Please enter some text';
-                              }
-                              return null;
-                            },
-                            ) ,
                           ),
-
                           Container(
                             margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
                             child: TextFormField(
-                            decoration: const InputDecoration(
-                              hintText: 'Password',
+                              decoration: const InputDecoration(
+                                hintText: 'Password',
+                              ),
+                              validator: (value) {
+                                if (value.isEmpty) {
+                                  return 'Please enter some text';
+                                }
+                                return null;
+                              },
                             ),
-                            validator: (value) {
-                              if (value.isEmpty) {
-                                return 'Please enter some text';
-                              }
-                              return null;
-                            },
-                            ) ,
                           ),
-                          
-                          
-                            
-                           
-                      ],),
+                          Container(
+                             margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                              child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                            children: <Widget>[
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (_) {
+                                    return SignUp();
+                                  }));
+                                },
+                                child: Text("Forget your password?",
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: "Metropolis-Normal",
+                                        fontWeight: FontWeight.w400)),
+                              ),
+                              Container(
+                                margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                child: Icon(Icons.subdirectory_arrow_right,
+                                    size: 16, color: Colors.red[500]),
+                              ),
+                            ],
+                          )),
+                        ],
+                      ),
                     ),
-                      
                   ],
                 ),
               ),
               Container(
-                  margin: EdgeInsets.fromLTRB(0, 92, 0, 0),
+                  margin: EdgeInsets.fromLTRB(0, 90, 0, 0),
                   decoration: BoxDecoration(boxShadow: [
                     BoxShadow(
                       color: Color.fromRGBO(0, 0, 0, 0.13),
@@ -109,7 +126,6 @@ class SignUp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ButtonTheme(
-                    
                         height: 50.0,
                         minWidth: 445,
                         child: RaisedButton(
