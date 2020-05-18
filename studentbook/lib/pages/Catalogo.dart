@@ -11,7 +11,7 @@ class Catalogo extends StatelessWidget {
       body: SafeArea(
         child: Column(children: [
           Container(
-              height: 195,
+              height: 210,
               width: double.infinity,
               decoration: BoxDecoration(color: Colors.white,
                boxShadow: [
@@ -29,7 +29,15 @@ class Catalogo extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                        Icon(Icons.arrow_back_ios, size:22),
+                          RaisedButton(
+                            
+                            color: Colors.white,
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/lib/pages/SignIn');
+                            },
+                            child:Icon(Icons.arrow_back_ios, size:22, ),
+                          ),
+                     
                         Icon(Icons.search,),
                       ],),
                       

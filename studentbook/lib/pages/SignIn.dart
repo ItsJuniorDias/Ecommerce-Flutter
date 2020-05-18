@@ -41,6 +41,7 @@ class SignIn extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
+                        
                           Text("Forget your password?",
                               style: TextStyle(
                                   fontSize: 18,
@@ -74,7 +75,7 @@ class SignIn extends StatelessWidget {
                         minWidth: 445,
                         child: RaisedButton(
                           onPressed: () => {
-                            print("pressionei o botão"),
+                            Navigator.pushNamed(context, '/lib/pages/Catalogo')
                           },
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0)),
@@ -83,7 +84,7 @@ class SignIn extends StatelessWidget {
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18,
-                                 fontFamily: "Metropolis-Normal",
+                                fontFamily: "Metropolis-Normal",
                                 fontWeight: FontWeight.w600),
                           ),
                           color: Colors.red,
@@ -104,16 +105,15 @@ class SignIn extends StatelessWidget {
                   ],
                 ),
               ),
-               Container(
-                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                   children: <Widget>[
-                     EmailWidget("gmail.png"),
-                      EmailWidget("facebook.png"),
-                   ],
-                 ),
-               ),
-              
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    EmailWidget("gmail.png"),
+                    EmailWidget("facebook.png"),
+                  ],
+                ),
+              ),
             ],
           ),
         ));
