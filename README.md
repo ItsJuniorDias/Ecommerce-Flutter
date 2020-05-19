@@ -2,6 +2,9 @@
 # E-commerce :iphone:
 Project created in flutter of a virtual notebook
 
+![ecommerce](https://user-images.githubusercontent.com/50254416/82363912-e910b180-99e4-11ea-9d72-724ab0502849.gif)
+
+
 ## About this Project
 
 The idea of the App is:
