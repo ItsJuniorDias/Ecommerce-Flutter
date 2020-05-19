@@ -1,6 +1,3 @@
-<div align="center">
-  <img src="./studentbook/lib/assets/logo2.png" height="200px" alt="StudentBook"/>
-</div>
 
 <div align="center">
   
@@ -11,7 +8,7 @@
 </div> 
 
 
-# CyberBook :iphone:
+# E-commerce :iphone:
 Project created in flutter of a virtual notebook
 
 ## About this Project
