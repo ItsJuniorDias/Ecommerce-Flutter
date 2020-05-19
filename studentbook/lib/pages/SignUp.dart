@@ -82,31 +82,6 @@ class SignUp extends StatelessWidget {
                               },
                             ),
                           ),
-                          Container(
-                             margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                              child: Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                            children: <Widget>[
-                              GestureDetector(
-                                onTap: () {
-                                  Navigator.push(context,
-                                      MaterialPageRoute(builder: (_) {
-                                    return SignUp();
-                                  }));
-                                },
-                                child: Text("Forget your password?",
-                                    style: TextStyle(
-                                        fontSize: 14,
-                                        fontFamily: "Metropolis-Normal",
-                                        fontWeight: FontWeight.w400)),
-                              ),
-                              Container(
-                                margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                child: Icon(Icons.subdirectory_arrow_right,
-                                    size: 16, color: Colors.red[500]),
-                              ),
-                            ],
-                          )),
                         ],
                       ),
                     ),
@@ -114,7 +89,33 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.fromLTRB(0, 90, 0, 0),
+                  margin: EdgeInsets.fromLTRB(0, 0, 14, 0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (_) {
+                            return SignIn();
+                          }));
+                        },
+                        child: Text("Already have an account?",
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontFamily: "Metropolis-Normal",
+                                fontWeight: FontWeight.w400)),
+                      ),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                        child: Icon(Icons.subdirectory_arrow_right,
+                            size: 24, color: Colors.red[500]),
+                      ),
+                    ],
+                  )),
+                  
+                      Container(
+                  margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
                   decoration: BoxDecoration(boxShadow: [
                     BoxShadow(
                       color: Color.fromRGBO(0, 0, 0, 0.13),
@@ -127,7 +128,7 @@ class SignUp extends StatelessWidget {
                     children: <Widget>[
                       ButtonTheme(
                         height: 50.0,
-                        minWidth: 445,
+                        minWidth: 305,
                         child: RaisedButton(
                           onPressed: () => {
                             Navigator.pushNamed(context, '/lib/pages/Catalogo')
@@ -147,8 +148,9 @@ class SignUp extends StatelessWidget {
                       ),
                     ],
                   )),
-              Container(
-                margin: EdgeInsets.fromLTRB(0, 122, 0, 0),
+
+                   Container(
+                margin: EdgeInsets.fromLTRB(0, 80, 0, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[

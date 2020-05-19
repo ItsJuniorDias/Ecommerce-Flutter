@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:studentbook/pages/Catalogo.dart';
-import 'package:studentbook/pages/PasswordForgot.dart';
 import 'package:studentbook/pages/SignUp.dart';
 import 'package:studentbook/widgets/EmailWidget.dart';
 import 'package:studentbook/widgets/FormComponent.dart';
 
-class SignIn extends StatelessWidget {
+class PasswordForgot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +23,7 @@ class SignIn extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(14, 5, 0, 0),
-                child: Text("Login",
+                child: Text("Fogot password",
                     style: TextStyle(
                         fontSize: 34,
                         fontFamily: "Metropolis",
@@ -38,34 +37,15 @@ class SignIn extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                    FormComponent(),
-                    Container(
-                      margin: EdgeInsets.fromLTRB(14, 16, 14, 0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (_) {
-                                return PasswordForgot();
-                              }));
-                            },
-                            child: Text("Forgot your password?",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontFamily: "Metropolis-Normal",
-                                    fontWeight: FontWeight.w400)),
-
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                            child: Icon(Icons.subdirectory_arrow_right,
-                                size: 24, color: Colors.red[500]),
-                          ),
-                        ],
+                    Text("Please, enter your email address. You will receive a link to create a new password via email.",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontFamily: "Metropolis-Normal",
+                        
                       ),
-                    ),
+                    ),  
+                    FormComponent(),
+                
                   ],
                 ),
               ),
@@ -91,7 +71,7 @@ class SignIn extends StatelessWidget {
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0)),
                           child: Text(
-                            "LOGIN",
+                            "SEND",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18,
@@ -103,28 +83,7 @@ class SignIn extends StatelessWidget {
                       ),
                     ],
                   )),
-              Container(
-                margin: EdgeInsets.fromLTRB(0, 120, 0, 0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text("Or login with social account",
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontFamily: "Metropolis-Normal",
-                            fontWeight: FontWeight.w400)),
-                  ],
-                ),
-              ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    EmailWidget("gmail.png"),
-                    EmailWidget("facebook.png"),
-                  ],
-                ),
-              ),
+           
             ],
           ),
         ));

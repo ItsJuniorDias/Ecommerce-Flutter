@@ -36,7 +36,7 @@ class CardProduct extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  width: 320,
+                  width: 203,
                   height: 105,
                   margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
                   padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
