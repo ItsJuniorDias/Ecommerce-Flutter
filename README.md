@@ -4,7 +4,7 @@
 
 <div align="center">
   
-  #### Your Digital Book
+  #### E-commerce
   
   ![](https://img.shields.io/badge/author-Junior%20Dias-/?color=ff5f54)
   ![](https://img.shields.io/badge/Mobile-Flutter%20-/?color=ff5f54)
@@ -18,7 +18,7 @@ Project created in flutter of a virtual notebook
 
 The idea of the App is:
 
-_"Build a digital notebook for students"._
+_"E-commerce built on flutter"._
  
 ## Why?
 This project is part of my portfolio, so, I'll be happy if you could provide me any feedback about the project, code, structure or anything that you can report that could make me a better developer!
