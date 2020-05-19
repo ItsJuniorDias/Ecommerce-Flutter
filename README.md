@@ -1,13 +1,4 @@
 
-<div align="center">
-  
-  #### E-commerce
-  
-  ![](https://img.shields.io/badge/author-Junior%20Dias-/?color=ff5f54)
-  ![](https://img.shields.io/badge/Mobile-Flutter%20-/?color=ff5f54)
-</div> 
-
-
 # E-commerce :iphone:
 Project created in flutter of a virtual notebook
 
