@@ -1,24 +1,15 @@
-<div align="center">
-  <img src="./studentbook/lib/assets/logo2.png" height="200px" alt="StudentBook"/>
-</div>
 
-<div align="center">
-  
-  #### Your Digital Book
-  
-  ![](https://img.shields.io/badge/author-Junior%20Dias-/?color=ff5f54)
-  ![](https://img.shields.io/badge/Mobile-Flutter%20-/?color=ff5f54)
-</div> 
-
-
-# CyberBook :iphone:
+# E-commerce :iphone:
 Project created in flutter of a virtual notebook
+
+![ecommerce](https://user-images.githubusercontent.com/50254416/82363912-e910b180-99e4-11ea-9d72-724ab0502849.gif)
+
 
 ## About this Project
 
 The idea of the App is:
 
-_"Build a digital notebook for students"._
+_"E-commerce built on flutter"._
  
 ## Why?
 This project is part of my portfolio, so, I'll be happy if you could provide me any feedback about the project, code, structure or anything that you can report that could make me a better developer!
@@ -41,9 +32,9 @@ To run this project in the development mode, you'll need to have a basic environ
 **Cloning the Repository**
 
 ```
-$ git clone https://github.com/ItsJuniorDias/StudentBook
+$ git clone https://github.com/ItsJuniorDias/Ecommerce-Flutter
 
-$ cd StudentBook
+$ cd Ecommerce-Flutter
 ```
 
 **Installing dependencies and running**
