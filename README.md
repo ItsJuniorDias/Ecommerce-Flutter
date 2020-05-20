@@ -32,9 +32,9 @@ To run this project in the development mode, you'll need to have a basic environ
 **Cloning the Repository**
 
 ```
-$ git clone https://github.com/ItsJuniorDias/StudentBook
+$ git clone https://github.com/ItsJuniorDias/Ecommerce-Flutter
 
-$ cd StudentBook
+$ cd Ecommerce-Flutter
 ```
 
 **Installing dependencies and running**
