@@ -33,7 +33,7 @@ class Catalogo extends StatelessWidget {
                             
                             color: Colors.white,
                             onPressed: () {
-                              Navigator.pushNamed(context, '/lib/pages/SignIn');
+                              Navigator.pushNamed(context, '/lib/pages/SignUp');
                             },
                             child:Icon(Icons.arrow_back_ios, size:22, ),
                           ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:studentbook/pages/Catalogo.dart';
 import 'package:studentbook/pages/SignIn.dart';
 import 'package:studentbook/widgets/EmailWidget.dart';
 

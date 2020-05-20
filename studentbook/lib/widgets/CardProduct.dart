@@ -68,22 +68,27 @@ class CardProduct extends StatelessWidget {
                             Icon(
                               Icons.star,
                               color: Colors.red[500],
+                              size: 14
                             ),
                             Icon(
                               Icons.star,
                               color: Colors.red[500],
+                              size: 14
                             ),
                             Icon(
                               Icons.star,
                               color: Colors.red[500],
+                              size: 14
                             ),
                             Icon(
                               Icons.star,
                               color: Colors.red[500],
+                              size: 14
                             ),
                             Icon(
-                              Icons.star,
+                              Icons.star_border,
                               color: Colors.red[500],
+                              size: 14
                             ),
                           ],
                         ),

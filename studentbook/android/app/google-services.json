@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "962718803225",
+    "firebase_url": "https://e-commerce-f326c.firebaseio.com",
+    "project_id": "e-commerce-f326c",
+    "storage_bucket": "e-commerce-f326c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962718803225:android:17c1ceab3338c14c279188",
+        "android_client_info": {
+          "package_name": "Its.flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962718803225-8etl5tgddnhgktquorep56e85q7gqnki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuXyBYn8MduxxshD2G18sUzqBMUlf5PGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962718803225-8etl5tgddnhgktquorep56e85q7gqnki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

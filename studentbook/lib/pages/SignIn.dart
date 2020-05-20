@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:studentbook/pages/Catalogo.dart';
 import 'package:studentbook/pages/PasswordForgot.dart';
-import 'package:studentbook/pages/SignUp.dart';
 import 'package:studentbook/widgets/EmailWidget.dart';
 import 'package:studentbook/widgets/FormComponent.dart';
 
