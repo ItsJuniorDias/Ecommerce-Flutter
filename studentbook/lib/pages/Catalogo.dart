@@ -3,8 +3,20 @@ import 'package:studentbook/widgets/Filters.dart';
 import '../widgets/CardProduct.dart';
 import '../widgets/ItemCategories.dart';
 
+import 'package:firebase_database/firebase_database.dart';
+import '../services/authentication.dart';
+import '../models/todo.dart';
+import 'dart:async';
+
 
 class Catalogo extends StatelessWidget {
+   Catalogo({Key key, this.auth, this.userId, this.logoutCallback})
+      : super(key: key);
+
+  final BaseAuth auth;
+  final VoidCallback logoutCallback;
+  final String userId;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,15 +41,13 @@ class Catalogo extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          RaisedButton(
-                            
-                            color: Colors.white,
-                            onPressed: () {
-                              Navigator.pushNamed(context, '/lib/pages/SignUp');
+                          GestureDetector(
+                              onTap: () {
+                              Navigator.pushNamed(context, '/lib/pages/SignIn');
                             },
                             child:Icon(Icons.arrow_back_ios, size:22, ),
                           ),
-                     
+                          
                         Icon(Icons.search,),
                       ],),
                       

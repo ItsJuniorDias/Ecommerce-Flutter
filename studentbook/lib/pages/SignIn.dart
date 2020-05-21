@@ -7,6 +7,7 @@ class SignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
         backgroundColor: Colors.grey[100],
         body: SafeArea(
           child: Column(
@@ -16,7 +17,12 @@ class SignIn extends StatelessWidget {
                 margin: EdgeInsets.fromLTRB(8, 14, 0, 25),
                 child: Row(
                   children: <Widget>[
-                    Icon(Icons.arrow_back_ios, size: 24),
+                     GestureDetector(
+                              onTap: () {
+                              Navigator.pushNamed(context, '/lib/pages/SignUp');
+                            },
+                            child:Icon(Icons.arrow_back_ios, size:22, ),
+                          ),
                   ],
                 ),
               ),

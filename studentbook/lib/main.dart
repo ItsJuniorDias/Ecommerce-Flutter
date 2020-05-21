@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:studentbook/pages/Catalogo.dart';
-import 'package:studentbook/pages/SignIn.dart';
-import 'package:studentbook/pages/SignUp.dart';
+import 'package:studentbook/pages/Login.dart';
+import 'package:studentbook/pages/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,10 +20,10 @@ class MyApp extends StatelessWidget {
         backgroundColor: Color(0xFFE5E5E5)
       ),
       //home: SignIn(),
-      initialRoute: '/lib/pages/SignUp',
+      initialRoute: '/lib/pages/Login',
       routes: {
-        "/lib/pages/SignIn": (context) => SignIn(),
-         "/lib/pages/SignUp": (context) => SignUp(),
+        "/lib/pages/home": (context) => HomePage(),
+         "/lib/pages/Login": (context) => LoginSignupPage(),
         "/lib/pages/Catalogo": (context) => Catalogo(),
         
       }
