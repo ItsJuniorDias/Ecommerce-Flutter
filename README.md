@@ -44,7 +44,7 @@ $ flutter run
 ```
  or
 ```
-Ctrl+F5 in Visual Code
+Ctrl+ F5 in Visual Code
 ```
 
 
