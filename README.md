@@ -23,7 +23,7 @@ If you want to test the App in the Production mode, the installers are listed be
 - Flutter [Link](https://flutter.dev/docs/get-started/install) 
 
 ## Configuration
-- Implementation Scroll View
+- Implementation Scroll View.
 
 ## Getting Started
 
